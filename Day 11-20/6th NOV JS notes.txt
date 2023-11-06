@@ -1,0 +1,46 @@
+In javascript, unshift is used in the array, then the last added element will be entered into the 0th element.
+
+Eg:
+const fruit=["Apple","Orange","Pears"];
+
+fruit.unshift("Mango");
+
+console.log(fruit)
+
+
+Output:
+
+["Mango","Apple","Orange","Pears"]
+
+push is used to add the element to the array.
+
+Array.isArray(fruit)
+
+
+JSON.stringify(obj_name)
+This is used to convert the code to JSON
+
+
+A simple code with classes and object using JS:
+
+class man{
+    constructor(firstName,lastName,dob){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.dob=new Date(dob);
+    }
+
+    getBirthYear(){
+        return this.dob.getFullYear();
+    }
+
+    getFullName(){
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+const person1=new man('Nirmalrajaa','Kathirvel','10-20-2001');
+const person2=new man('Kathirvel','Nagappan','08-23-1973');
+
+console.log(person2)
+console.log(person1.getFullName())
